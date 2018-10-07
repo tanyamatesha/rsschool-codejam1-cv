@@ -1,5 +1,59 @@
 @import "variables", "fonts";
 
 body {
-    font-family: $font-family;
+  font-family: $font-family;
+  background: $c-bg;
+  color: $c-title;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  background: $c-header-bg;
+
+  &__image {
+    padding: 10px 0 10px;
+    border-radius: 50%;
+    width: 150px;
+    max-width: 100%;
+  }
+
+  &__nameTitle {
+    font-size: 45px;
+    line-height: 0.91;
+    margin: 0;
+    color: $c-title;
+  }
+
+  &__socialButtons {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 5px;
+  }
+
+  &-a {
+    color: $c-title;
+    padding-right: 10px;
+
+    &:hover {
+      color: $c-white;
+      cursor: pointer;
+    }
+  }
+
+  &__li {
+    list-style: none;
+  }
+
+  &__content_contacts {
+    border-top: 1px solid $c-border;
+    display: flex;
+    margin: 0 30px 0 30px;
+    justify-content: space-between;
+  }
 }
